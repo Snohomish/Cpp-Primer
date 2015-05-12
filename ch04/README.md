@@ -140,6 +140,7 @@ they probably do not behave as the programmer expects. Why?
 Rewrite the expressions as you think they should be.
 ```cpp
 if (p = getPtr() != 0)
+// actually illegal - can't convert bool to pointer
 if (i = 1024)
 // why? always true. use an assigment as a condition.
 // correct it
